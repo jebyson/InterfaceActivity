@@ -1,6 +1,6 @@
 package com.company;
 
-import java.io.File;
+import java.io.*;
 import java.util.*;
 
 public class Implementation implements UI {
@@ -9,15 +9,14 @@ public class Implementation implements UI {
 
     public void ok()
     {
-
     }
     public void no()
     {
-        exit();
+        cancel();
     }
     public void cancel()
     {
-        exit();
+        cancel();
     }
     public void exit()
     {
@@ -44,26 +43,34 @@ public class Implementation implements UI {
     }
     public void setTaskbar()
     {
-
+        //?
     }
     public void startOS()
     {
-        
+        //?
     }
     public void runProgram(String programName)
     {
-
+        //?
     }
     public void startMouse()
     {
-
+        //?
     }
     public void keyboardInput(char key)
     {
+        Scanner input = new Scanner(System.in);
+        String userInput = "";
+        char x = key;
 
+        for(int j = 0; j < 1; j++)
+        {
+            userInput += x;
+        }
     }
     public void setWallPaper(File image)
     {
+        File file = new File(image);
 
     }
     public void setTime()
